@@ -2,15 +2,20 @@
 <html>
 <head>
 	<title>Temperature Converter</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<h1>Temperature Converter</h1>
-	<form>
+	<form id="tempForm">
 		Enter a temperature:
 		<input type="number" name="temperature" min="-30" max="200"><br><br>
-		<input type="radio" name="measurementStyle" value="fahrenheit">Fahrenheit<br>
-		<input type="radio" name="measurementStyle" value="celsius">Celsius<br>
-
+		<input type="radio" name="measurementStyle" value="fahrenheit" id="fahrenheit">Fahrenheit<br>
+		<input type="radio" name="measurementStyle" value="celsius" id="celsius">Celsius<br>
+		<input type="submit" name="submitButton" id="submitButton"><button id="clearButton">Clear</button>
 	</form>
+
+	<div id="convertedTemp"></div>
+
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
