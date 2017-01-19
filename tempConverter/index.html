@@ -6,15 +6,16 @@
 </head>
 <body>
 	<h1>Temperature Converter</h1>
-	<form id="tempForm">
+
 		Enter a temperature:
-		<input type="number" name="temperature" min="-30" max="200"><br><br>
+		<input type="number" name="temperature" min="-30" max="200" id="userTemp"><br><br>
+		<label><strong>Convert temperature to:</strong><br></label>
 		<input type="radio" name="measurementStyle" value="fahrenheit" id="fahrenheit">Fahrenheit<br>
 		<input type="radio" name="measurementStyle" value="celsius" id="celsius">Celsius<br>
 		<input type="submit" name="submitButton" id="submitButton"><button id="clearButton">Clear</button>
-	</form>
 
-	<div id="convertedTemp"></div>
+
+	<div id="convertedTemp">Converted Temperature: </div>
 
 	<script type="text/javascript" src="main.js"></script>
 </body>
